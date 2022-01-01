@@ -9,21 +9,8 @@ html(lang="en")
     body 
         header
             h1 Noom
-            div#welcome
-                h4 Open Rooms:
-                ul
-                form#enter
-                    input(placeholder="room name", required, type="text")
-                    button Enter Room
-            div#room
-                h1
-                ul
-                form#nick
-                    input(placeholder="nickname", required, type="text")
-                    button Enter
-                form#msg
-                    input(placeholder="message", required, type="text")
-                    button Enter
+        main 
+            video#myFace(autoplay, playsinline, width="400", height="400")
 
         script(src="/socket.io/socket.io.js")
         script(src="/public/js/app.js")
